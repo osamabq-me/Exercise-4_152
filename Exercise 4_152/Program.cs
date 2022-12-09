@@ -66,6 +66,8 @@ namespace Exercise_4_152
     {
         static void Main(string[] args)
         {
+            Stack OS = new Stack(72);
+
         }
     }
 }
