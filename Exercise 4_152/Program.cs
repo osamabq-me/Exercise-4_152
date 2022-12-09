@@ -51,7 +51,14 @@ namespace Exercise_4_152
             {
                 Console.WriteLine("\nStack is Empty");
             }
-           
+            else
+            {
+                for (int i = 0; i <= top; i++)
+                {
+                    Console.WriteLine("\nData[" + (i + 1) + "]: " + oss[i]);
+                }
+            }
+
         }
 
     }
