@@ -18,7 +18,15 @@ namespace Exercise_4_152
             top = -1;
             max = size;
         }
-
+        public void push()
+        {
+            string Ndata;
+            if (top == max - 1)
+            {
+                Console.WriteLine("Stack Overflow");
+                return;
+            }
+        }
     }
     class Program
     {
