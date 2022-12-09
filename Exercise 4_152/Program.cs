@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Exercise_4_152
@@ -69,39 +70,49 @@ namespace Exercise_4_152
             Stack OS = new Stack(72);
             while (true)
             {
-                Console.WriteLine("\n*******Main Menu*******");
-                Console.WriteLine("1. Add Data to stack");
-                Console.WriteLine("2. Delete Data from the Stack");
-                Console.WriteLine("3. Dispaly all stack data");
-                Console.WriteLine("4. Exit\n");
-                Console.WriteLine("Enter yor choice(1-4):");
-                decimal ch = Convert.ToDecimal(Console.ReadLine());
-
-                switch (ch)
+                try
                 {
-                    case 1:
-                        {
-                            OS.push();
-                        }
-                        break;
+                    Console.WriteLine("\n*******Main Menu*******");
+                    Console.WriteLine("1. Add Data to stack");
+                    Console.WriteLine("2. Delete Data from the Stack");
+                    Console.WriteLine("3. Dispaly all stack data");
+                    Console.WriteLine("4. Exit\n");
+                    Console.WriteLine("Enter yor choice(1-4):");
+                    decimal ch = Convert.ToDecimal(Console.ReadLine());
 
-                    case 2:
-                        OS.pop();
-                        break;
+                    switch (ch)
+                    {
+                        case 1:
+                            {
+                                OS.push();
+                            }
+                            break;
 
-                    case 3:
-                        OS.display();
-                        break;
-                    case 4:
-                        Environment.Exit(0);
-                        break;
-                    default:
-                        {
-                            Console.WriteLine("\nInvalid option");
-                        }
-                        break;
+                        case 2:
+                            OS.pop();
+                            break;
 
+                        case 3:
+                            OS.display();
+                            break;
+                        case 4:
+                            Console.WriteLine("Thanks for using my program");
+                            Thread.Sleep(1000);
+                            Environment.Exit(0);
+                            break;
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid option");
+                            }
+                            break;
+
+                    }
                 }
+                catch(Exception e)
+                {
+                    Console.WriteLine("You must input a number");
+                }
+                
             }
 
         }
