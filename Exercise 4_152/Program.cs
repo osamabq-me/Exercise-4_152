@@ -12,8 +12,12 @@ namespace Exercise_4_152
         int top;
         int max;
 
-
-
+        public Stack(int size)
+        {
+            oss = new string[size];
+            top = -1;
+            max = size;
+        }
 
     }
     class Program
