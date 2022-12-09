@@ -67,6 +67,15 @@ namespace Exercise_4_152
         static void Main(string[] args)
         {
             Stack OS = new Stack(72);
+            while (true)
+            {
+                Console.WriteLine("\n****Menu****");
+                Console.WriteLine("1. Add Data to stack");
+                Console.WriteLine("2. Delete Data from the Stack");
+                Console.WriteLine("3. Dispaly all stack data");
+                Console.WriteLine("4. Exit\n");
+                Console.WriteLine("Enter yor choice(1-4):");
+            }
 
         }
     }
