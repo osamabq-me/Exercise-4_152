@@ -45,6 +45,15 @@ namespace Exercise_4_152
                 top--;
             }
         }
+        public void display()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("\nStack is Empty");
+            }
+           
+        }
+
     }
     class Program
     {
