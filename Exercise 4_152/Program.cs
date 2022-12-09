@@ -33,6 +33,18 @@ namespace Exercise_4_152
                 oss[++top] = Ndata;
             }
         }
+        public void pop()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("\n \n Stack Underflow: Cannot delete from an empty stack\n\n");
+            }
+            else
+            {
+                Console.WriteLine("\nPoped data is: " + oss[top]);
+                top--;
+            }
+        }
     }
     class Program
     {
