@@ -75,6 +75,22 @@ namespace Exercise_4_152
                 Console.WriteLine("3. Dispaly all stack data");
                 Console.WriteLine("4. Exit\n");
                 Console.WriteLine("Enter yor choice(1-4):");
+                decimal ch = Convert.ToDecimal(Console.ReadLine());
+
+                switch (ch)
+                {
+                    case 1:
+                        {
+                            OS.push();
+                        }
+                        break;
+                    default:
+                        {
+                            Console.WriteLine("\nInvalid option");
+                        }
+                        break;
+
+                }
             }
 
         }
