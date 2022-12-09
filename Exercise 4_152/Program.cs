@@ -26,6 +26,12 @@ namespace Exercise_4_152
                 Console.WriteLine("Stack Overflow");
                 return;
             }
+            else
+            {
+                Console.WriteLine("Input the new data");
+                Ndata = Console.ReadLine();
+                oss[++top] = Ndata;
+            }
         }
     }
     class Program
