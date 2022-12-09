@@ -84,6 +84,17 @@ namespace Exercise_4_152
                             OS.push();
                         }
                         break;
+
+                    case 2:
+                        OS.pop();
+                        break;
+
+                    case 3:
+                        OS.display();
+                        break;
+                    case 4:
+                        Environment.Exit(0);
+                        break;
                     default:
                         {
                             Console.WriteLine("\nInvalid option");
